@@ -115,9 +115,17 @@ nav ul li a:hover {
   color: #0000A0;
 }
 
+.author {
+  color: #A00000
+}
+
 td {
   padding: 0.3em;
   vertical-align: top;
+}
+
+ol li{
+  margin-left: 1.5em;
 }
 
 footer {
