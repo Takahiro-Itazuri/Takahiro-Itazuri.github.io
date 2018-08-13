@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-size: 12px;
   line-height: 160%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -112,11 +113,16 @@ nav ul li a:hover {
 }
 
 .project-title {
-  color: #0000A0;
+  color: #0000CC;
+}
+
+img.teaser {
+  width: 90%;
+  display: inline;
 }
 
 .author {
-  color: #A00000
+  color: #CC0000
 }
 
 td {
