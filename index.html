@@ -1,37 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang"en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Takahir Itazuri's Web Page">
+    <meta name="author" content="takahiro Itazuri">
+
     <title>Takahiro Itazuri - Waseda Univerity</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navbar-top-fixed.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container">
-          <div class="two-column-wrapper" style="justify-content: space-between;">
-            <div class="flex-8">
-              <ul>
-                <li><b style="color:white;font-size:1.5em;">Takahiro Itazuri</b></li>
-                <li><a href="#AboutMe">About Me</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Publications">Publications</a></li>
-                <li><a href="#Contact">Contact</a></li>
-              </ul>
-            </div>
-            <div class="flex-2">
-              <div style="display:flex;justify-content:center;">
-                <div class="flex-1"></div>
-                <div class="flex-1"><a href="https://takahiro-itazuri.github.io/index.html">En</a></div>
-                <div class="flex-1"><a href="https://takahiro-itazuri.github.io/ja/index.html">Ja</a></div>
-                <div class="flex-1"></div>
-              </div>
-            </div>
+          <a class="navbar-brand" href="#">Takahiro Itazuri</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#AboutMe">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Publications">Publications</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+            </ul>
           </div>
         </div>
-      </nav>
+      </nav>       
     </header>
     <div class="container" id="AboutMe">
       <h1>About Me</h1>
