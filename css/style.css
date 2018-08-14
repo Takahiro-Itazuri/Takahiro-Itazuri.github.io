@@ -1,6 +1,6 @@
 hr {
-  color: #cccccc;
-  border: 1px #cccccc solid;
+  border: none;
+  border-top: 2px #cccccc dashed;
   margin-top: 0px;
   margin-bottom: 20px;
 }
