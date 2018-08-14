@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang"en">
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Takahir Itazuri's Web Page">
@@ -9,7 +9,12 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/navbar-top-fixed.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scroll.js"></script>
   </head>
   <body>
     <header>
@@ -19,137 +24,187 @@
           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div id="menu" class="collapse navbar-collapse">
+          <div id="menu" class="collapse navbar-collapse" style="justify-content: space-between;">
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link" href="#AboutMe">About Me</a></li>
               <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
               <li class="nav-item"><a class="nav-link" href="#Publications">Publications</a></li>
               <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+              <li class="d-md-none"><a class="nav-link" href="https://takahiro-itazuri.github.io/ja/index.html">Japanese Page</a></li>
             </ul>
           </div>
+          <a class="btn btn-outline-primary d-none d-md-flex" href="https://takahiro-itazuri.github.io/ja/index.html">Japanese</a>
         </div>
       </nav>       
     </header>
-    <div class="container" id="AboutMe">
-      <h1>About Me</h1>
-      <hr>
-      <div class="two-column-wrapper" style="justify-content: space-between;">
-        <div class="flex-3" style="text-align: center;">
-          <img class="portrait" src="img/portrait.jpg" width="90%">
+    <main>
+      <div class="container" id="AboutMe">
+        <h4>About Me</h4>
+        <hr>
+        <div class="row align-middle">
+          <div class="col-sm-4 text-center">
+            <img class="portrait" src="img/portrait.jpg">
+          </div>
+          <div class="col-sm-8 text-left">
+            <h5>Takahiro Itazuri</h5>
+            <table class="noborder">
+              <tr>
+                <td align="center"><i class="fas fa-user fa-lg"></i></td>
+                <td align="left">Master's Student</td>
+              </tr>
+              <tr>
+                <td align="center"><i class="fas fa-university fa-lg"></i></td>
+                <td align="left">
+                  Morishima Lab.,<br>
+                  Department of Pure and Applied Physics,<br>
+                  Graduate School of Advanced Science and Engineering,<br>
+                  Waseda University
+                </td>
+              </tr>
+              <tr>
+                <td align="center"><i class="fas fa-file fa-lg"></i></td>
+                <td align="left"><a href="">Resume</a></td>
+              </tr>
+              <tr>
+                <td align="center"><i class="fab fa-github fa-lg"></i></td>
+                <td align="left"><a href="https://github.com/takahiro-itazuri">GitHub</a></td>
+              </tr>
+            </table>
+          </div>
         </div>
-        <div class="flex-7">
-          <h1>Takahiro Itazuri</h1>
-          <table>
-            <tr>
-              <td align="center"><i class="fas fa-user fa-lg"></i></td>
-              <td align="left">Master's Student</td>
-            </tr>
-            <tr>
-              <td align="center"><i class="fas fa-university fa-lg"></i></td>
-              <td align="left">
-                Morishima Lab.,<br>
-                Department of Pure and Applied Physics,<br>
-                Graduate School of Advanced Science and Engineering,<br>
-                Waseda University
-              </td>
-            </tr>
-            <tr>
-              <td align="center"><i class="fas fa-file fa-lg"></i></td>
-              <td align="left"><a href="">Resume</a></td>
-            </tr>
-            <tr>
-              <td align="center"><i class="fab fa-github fa-lg"></i></td>
-              <td align="left"><a href="https://github.com/takahiro-itazuri">GitHub</a></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="container" id="Biography">
-      <h1>Biography</h1>
-      <hr>
-      <table>
-        <tr>
-          <td>2017.06</td>
-          <td>IPA Exploratory IT Human Resource Project (MITOU Program). [<a href="https://www.ipa.go.jp/jinzai/mitou/2017/gaiyou_ig-2.html">link</a>]</td>
-        </tr>
-        <tr>
-          <td>2017.03</td>
-          <td>Bachelor of Science (B.S.), Waseda University, Japan.</td>
-        </tr>
-      </table>
-    </div>
-    <div class="container" id="Projects">
-      <h1>Projects</h1>
-      <hr>
-      <div class="two-column-wrapper" style="justify-content: space-between;">
-        <div class="flex-2" style="text-align:center;">
-          <img class="teaser" src="img/noimage.png">
-        </div>
-        <div class="flex-7">
-          <h3 class="project-title">Court-based Volleyball Video Summarization Focusing on Rally Scene</h3>
-          <span class="author">Takahiro Itazuri</span>, Tsukasa Fukusato, Shugo Yamaguchi, Shigeo Morishima
-        </div>
-      </div>
-      <div class="two-column-wrapper" style="justify-content: space-between;">
-        <div class="flex-2" style="text-align:center;">
-          <img class="teaser" src="img/noimage.png">
-        </div>
-        <div class="flex-7">
-          <h3 class="project-title">Visual Object Tracking (<i>Ongoing</i>)</h3>
-          <span class="author">Takahiro Itazuri</span>
+        <br>
+        <div class="row">
+          <div class="col-6">
+            <h5>Biography</h5>
+            <table class="noborder">
+              <tr>
+                <td>2017.06</td>
+                <td>IPA Exploratory IT Human Resource Project (MITOU Program). [<a href="https://www.ipa.go.jp/jinzai/mitou/2017/gaiyou_ig-2.html">link</a>]</td>
+              </tr>
+              <tr>
+                <td>2017.03</td>
+                <td>Bachelor of Science (B.S.), Waseda University, Japan.</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-6">
+            <h5>Research Interest</h5>
+            My research interests lie on <b>Computer Vision</b> and <b>Multimedia</b>.
+            In particular, I am interested in<br>
+            <ul>
+              <li>Sports Video Processing</li>
+              <li>
+                Fundamental Computer Vision Task
+                <ul>
+                  <li>Visual Object Tracking</li>
+                  <li>Understanding Deep Learning</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="two-column-wrapper" style="justify-content: space-between;">
-        <div class="flex-2" style="text-align:center;">
-          <img class="teaser" src="img/noimage.png">
+      <br>
+      <br>
+      <div class="container" id="Projects">
+        <h4>Projects</h4>
+        <hr>
+        <div class="row align-middle">
+          <div class="col-3">
+            <img class="teaser" src="img/noimage.png">
+          </div>
+          <div class="col-9">
+            <h6 class="text-primary">Visual Object Tracking (<i>Ongoing</i>)</h6>
+            <span class="text-danger">Takahiro Itazuri, Shigeo Morishima</span>
+          </div>
         </div>
-        <div class="flex-7">
-          <h3 class="project-title">Movement Sonification for Motor Learning (<i>Ongoing</i>)</h3>
-          <span class="author">Takahiro Itazuri</span>
+        <div class="row align-middle">
+          <div class="col-3">
+            <img class="teaser" src="img/RhythMo.png">
+          </div>
+          <div class="col-9">
+            <h6 class="text-primary">Movement Sonification for Motor Learning (<i>Ongoing</i>)</h6>
+            <span class="text-danger">Takahiro Itazuri</span>, Tsukasa Fukusato Shigeo Morishima<br>
+            <b>IPA Exploratory IT Human Resource Project (MITOu Program 2017)</b>
+          </div>
+        </div>
+        <div class="row align-middle">
+          <div class="col-3">
+            <img class="teaser" src="img/Court-based_Volleyball_Video_Summarization_Focusing_on_Rally_Scene.png">
+          </div>
+          <div class="col-9">
+            <h6 class="text-primary">Court-based Volleyball Video Summarization Focusing on Rally Scene</h6>
+            <span class="text-danger">Takahiro Itazuri</span>, Tsukasa Fukusato, Shugo Yamaguchi, Shigeo Morishima<br>
+            <b>Computer Vision and Pattern Recognition Workshops (CVPRW 2017)</b><br>   
+          </div>
+        </div>
+        <div class="row align-middle">
+          <div class="col-3">
+            <img class="teaser" src="img/Self-Supervised_Learning_for_Spatiotemporal_3DCNN_Towards_Effective_Motion_Feature.png">
+          </div>
+          <div class="col-9">
+            <h6 class="text-primary">Self-Supervised Learning for Spatiotemporal 3DCNN Towards Effective Motion Feature</h6>
+            Tomoyuki Suzuki, Kensho Hara, <span class="text-danger">Takahiro Itazuri</span>, Hirokatsu Kataoka
+          </div>
+        </div>
+        <div class="row align-middle">
+          <div class="col-3">
+            <img class="teaser" src="img/Understanding_Fake_Faces.png">
+          </div>
+          <div class="col-9">
+            <h6 class="text-primary">Understanding Fake Faces</h6>
+            Ryota Natsume, Kazuki Inoue, Yoshihiro Fukuhara, Shintaro Yamamoto, Hisokatsu Kataoka, Shigeo Morishima, <span class="text-danger">Takahiro Itazuri</span><br>
+            <b>European Conference on Computer Vision Workshop (ECCVW 2018)</b>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container" id="Publications">
-      <h1>Publications</h1>
-      <hr>
-      <h2>Full Papers</h2>
-      <table>
-        <tr>
-          <td>1.</td>
-          <td><span class="author">Takahiro Itazuri</span>, Tsukasa Fukusato, Shugo Yamaguchi, and Shigeo Morishima, "Court-based Volleyball Video Summarization Focusing on Rally Scene", In <i>Proceedings of the 3rd IEEE International Workshop on Computer Vision in Sports</i> (CVSports), pp.123-130, 2017. <a href="https://ieeexplore.ieee.org/document/8014762/">[DOI]</a></td>
-        </tr>
-      </table>
-      <h2>Posters</h2>
-      <table>
-        <tr>
-          <td>1.</td>
-          <td><span class="author">Takahiro Itazuri</span>, Tsukasa Fukusato, Shugo Yamaguchi, and Shigeo Morishima, "Court-Aware Volleyball Video Summarization", <i>ACM SIGGRAPH 2017</i>, No.74, 2017. <a href="https://dl.acm.org/citation.cfm?doid=3102163.3102204">[DOI]</a></td>
-        </tr>
-      </table>
-    </div>
-    <div class="container" id="Contact">
-      <h1>Contact</h1>
-      <hr>
-      <table>
-        <tr>
-          <td align="center"><i class="fas fa-phone fa-lg"></i></td>
-          <td align="left">+81-3-5286-3510</td>
-        </tr>
-        <tr>
-          <td align="center"><i class="fas fa-map-marker-alt fa-lg"></i></td>
-          <td align="left">55N406, 3-4-1 Okubo, Shinjuku, Tokyo, 169-0072, Japan.</td>
-        </tr>
-        <tr>
-          <td align="center"><i class="fas fa-envelope fa-lg"></i></td>
-          <td align="left">s132800732[at]fuji.waseda.jp</td>
-        </tr>
-      </table>
-    </div>
-    <footer>
-      <div class="container">
-        © Takahiro Itazuri<br>
-        Last Update: 2018.08.12
+      <br>
+      <br>
+      <div class="container" id="Publications">
+        <h4>Publications</h4>
+        <hr>
+        <h5>Full Papers</h5>
+        <table class="noborder">
+          <tr>
+            <td>1.</td>
+            <td><span class="text-danger">Takahiro Itazuri</span>, Tsukasa Fukusato, Shugo Yamaguchi, and Shigeo Morishima, "Court-based Volleyball Video Summarization Focusing on Rally Scene", In <i>Proceedings of the 3rd IEEE International Workshop on Computer Vision in Sports</i> (CVSports), pp.123-130, 2017. <a href="https://ieeexplore.ieee.org/document/8014762/">[DOI]</a></td>
+          </tr>
+        </table>
+        <br>
+        <h5>Posters</h5>
+        <table class="noborder">
+          <tr>
+            <td>1.</td>
+            <td><span class="text-danger">Takahiro Itazuri</span>, Tsukasa Fukusato, Shugo Yamaguchi, and Shigeo Morishima, "Court-Aware Volleyball Video Summarization", <i>ACM SIGGRAPH 2017</i>, No.74, 2017. <a href="https://dl.acm.org/citation.cfm?doid=3102163.3102204">[DOI]</a></td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <br>
+      <div class="container" id="Contact">
+        <h4>Contact</h4>
+        <hr>
+        <table class="noborder">
+          <tr>
+            <td align="center"><i class="fas fa-phone fa-lg"></i></td>
+            <td align="left">+81-3-5286-3510</td>
+          </tr>
+          <tr>
+            <td align="center"><i class="fas fa-map-marker-alt fa-lg"></i></td>
+            <td align="left">55N406, 3-4-1 Okubo, Shinjuku, Tokyo, 169-0072, Japan.</td>
+          </tr>
+          <tr>
+            <td align="center"><i class="fas fa-envelope fa-lg"></i></td>
+            <td align="left">s132800732[at]fuji.waseda.jp</td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <br>
+    </main>
+    <footer class="bg-dark">
+      <div class="container text-center">
+        <div class="footer-copyright">© 2018 Copyright: Takahiro Itazuri</div>
       </div>
     </footer>
   </body>
