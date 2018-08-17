@@ -1,3 +1,11 @@
+h6 {
+  font-size: 1.2rem;
+}
+
+b {
+  font-weight: 600;
+}
+
 hr {
   border: none;
   border-top: 2px #cccccc dashed;
